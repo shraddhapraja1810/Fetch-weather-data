@@ -42,11 +42,7 @@ async function search(city, state, country){
         data.weather[0].main === "Fog"
       ) {
         weatherImg.src = "img/mist.png";
-      } else if (data.weather[0].main === "Haze") {
-        weatherImg.src = "img/haze.png";
-      } else if (data.weather[0].main === "Thunderstorm") {
-        weatherImg.src = "img/thunderstorm.png";
-      }
+      } 
     } else {
       let box = document.querySelector(".return");
       box.style.display = "none";
